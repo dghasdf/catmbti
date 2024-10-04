@@ -44,6 +44,10 @@ const LogoImg = styled.div`
 const Desc = styled.div`
   font-size: 20px;
   margin: 10px 0;
+  padding: 8px 14px;
+  font-size: 20px;
+  background: crimson;
+  border-radius: 8px;
 `;
 
 const Home = () => {
