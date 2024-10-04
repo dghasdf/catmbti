@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Button } from "react-bootstrap";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { ResultData } from "../assets/questiondata";
+import { ResultData } from "../assets/resultData";
 import KaKaoshareButton from "../components/KaKaoshareButton";
 
 const Wrapper = styled.div`
@@ -81,16 +81,16 @@ const Result = () => {
         <Title>결과보기</Title>
         <Title></Title>
         <LogoImg>
-          <img className="rounded-circle" src={data.img} />
+          <img className="rounded-circle" src={data.image} />
         </LogoImg>
         <Desc>
-          예비집사님과 찰떡궁합인 고양이는 <br /> 🐱 {data.best}형 {data.name}{" "}
+          예비집사님과 찰떡궁합인 고양이는 <br /> 🐱 {data.best}형 {data.name}
           🐱
         </Desc>
         <Desc>{data.desc}</Desc>
         <ButtonGoup>
           <Button onClick={handleClickButton}>테스트 다시 시작하기</Button>
-          <KaKaoshareButton data={resultData} />
+          <KaKaoshareButton data={ResultData} />
         </ButtonGoup>
       </Contents>
     </Wrapper>

@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { Button } from "bootstrap";
+import { Button } from "react-bootstrap";
 
 const { Kakao } = window;
 
 const KaKaoshareButton = ({ data }) => {
   const url = "https://catsmbti.netlify.app/";
-  const resultURL = window.logcation.href;
+  const resultURL = window.location.href;
   useEffect(() => {
     Kakao.cleanup();
     Kakao.init("d75b5957d8555f6affd5bec886e7b3a9");
