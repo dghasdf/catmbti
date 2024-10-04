@@ -90,7 +90,7 @@ const Result = () => {
         <Desc>{data.desc}</Desc>
         <ButtonGoup>
           <Button onClick={handleClickButton}>테스트 다시 시작하기</Button>
-          <KaKaoshareButton />
+          <KaKaoshareButton data={resultData} />
         </ButtonGoup>
       </Contents>
     </Wrapper>
