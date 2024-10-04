@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Button } from "react-bootstrap";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { ResultData } from "../assets/questiondata";
+import KaKaoshareButton from "../components/KaKaoshareButton";
 
 const Wrapper = styled.div`
   display: flex;
@@ -51,6 +52,11 @@ const Desc = styled.div`
   border-radius: 8px;
 `;
 
+const ButtonGoup = styled.div`
+  display: flex;
+  gap: 10px;
+`;
+
 const Result = () => {
   const [data, setData] = useState({});
   const [searchParms] = useSearchParams();
@@ -82,7 +88,10 @@ const Result = () => {
           🐱
         </Desc>
         <Desc>{data.desc}</Desc>
-        <Button onClick={handleClickButton}>테스트 다시 시작하기</Button>
+        <ButtonGoup>
+          <Button onClick={handleClickButton}>테스트 다시 시작하기</Button>
+          <KaKaoshareButton />
+        </ButtonGoup>
       </Contents>
     </Wrapper>
   );
