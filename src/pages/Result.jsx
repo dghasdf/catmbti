@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Button } from "react-bootstrap";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
-import { ResultData } from "../assets/resultData";
+import { ResultData } from "../assets/resultData (1)";
 import KaKaoshareButton from "../components/KaKaoshareButton";
 
 const Wrapper = styled.div`
